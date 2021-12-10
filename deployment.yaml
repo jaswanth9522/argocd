@@ -21,7 +21,7 @@ spec:
       initContainers:
       - name: init-myservice
         image: busybox:1.28
-        command: ['sh', '-c', "echo "hello world" "]
+        command: ['sh', '-c', "echo "hello world""]
       - name: init-mydb
         image: busybox:1.28
         command: ['sh', '-c', "ls -lrt"]

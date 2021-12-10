@@ -18,10 +18,3 @@ spec:
         image: docker.io/kostiscodefresh/gitops-simple-app:v1.0
         ports:
         - containerPort: 8080
-      initContainers:
-      - name: init-myservice
-        image: busybox:1.28
-        command: ['sh', '-c', "echo "hello world""]
-      - name: init-mydb
-        image: busybox:1.28
-        command: ['sh', '-c', "ls -lrt"]
